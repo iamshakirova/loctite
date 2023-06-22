@@ -1,0 +1,81 @@
+.secondForm-text{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
+}
+.secondForm-text h1{
+    font-size: 25px;
+    color:#3b3b3b;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.secondForm-text p{
+    font-size: 20px;
+    color:#3b3b3b;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.secondForm-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 30px auto;
+}
+.secondForm-container input{
+    width: 30%; 
+    padding: 8px;
+    outline: none;
+    border: 1px solid #658997;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.secondForm-container textarea{
+    width: 100%;
+    height: 120px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #658997;
+    outline: none;
+    resize: none;
+}
+.secondForm-container button{
+    width:100%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 15px;
+    background-color:#ff5722;
+    border: none;
+    color: #fff;
+}
+.secondForm-container button:hover{
+    color: #fe4c1c;
+    border: 2px solid #fe4c1c;
+    background-color: rgba(255, 0, 0, 0);
+    transition: .3s;
+}
+
+@media(max-width:950px){
+    .secondForm-text h1, p{
+        font-size: 20px;
+    }
+    .secondForm-container input{
+        width: 100%; 
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:950px){
+    .secondForm-text h1, p{
+        font-size: 20px;
+    }
+    .secondForm-container input{
+        width: 100%; 
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}

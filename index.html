@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a615388c88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="style/all.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-bars" onclick="showFirstMobile()"></i>
+            <img src="images/henkel-logo .svg" alt="">
+            <div class="logo-ev">
+                <img src="images/logo.jpeg" alt="">
+            </div>
+        </div>
+        <div class="head-menu">
+            <a data-goto=".aboutUs" href=""  class="menu_link">О нас</a>
+            <a data-goto=".product" href="" class="menu_link">Каталог</a>
+            <a data-goto=".secondForm" href="" class="menu_link">Отзывы</a>
+            <a data-goto=".picture-prev" href="" class="menu_link">Преимущества</a>
+            <a data-goto=".contact" href="" class="menu_link">Контакты</a>
+        </div>
+        <div class="mobileHeader" id="mobilelAdapt">
+            <ul class="mobile__nav">
+                <a data-goto=".aboutUs" href=""  class="menu_link">О нас</a>
+                <a data-goto=".product" href="" class="menu_link">Каталог</a>
+                <a data-goto=".secondForm" href="" class="menu_link">Отзывы</a>
+                <a data-goto=".picture-prev" href="" class="menu_link">Преимущества</a>
+                <a data-goto=".contact" href="" class="menu_link">Контакты</a>
+                <button id="close-btn" onclick="closeFirstMobile()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </ul>
+            <div class="mobile__contact">
+                <a href="tel:+77075256969">+7 707 525 69 69</a>
+                <a href="tel:+77781111344">+7 778 111 13 44</a>
+                <a href="mailto:loctite.kz@gmail.com">loctite.kz@gmail.com</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-inner">
+            <h1>Henkel – мировой лидер на рынке клеев, герметиков и средств для обработки поверхностей.</h1>
+            <p>Наша компания поставляет любую продукцию LOCTITE в любых ее объемах.</p>
+            <a href="#" onclick="showFirstAdapt()">Оставить заявку</a>
+        </div>
+        <div class="home-img">
+            <img src="images/loctite_banner.webp" alt="">
+        </div>
+        <div class="container-fr">
+            <div class="content-fr" id="form-window">
+                <div class="right-side">
+                    <button id="close-button" onclick="closeFirstAdapt()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="topic-text">ЗАПОЛНИТЕ ФОРМУ</div>
+                    <p>
+                        Наш менеджер свяжется с Вами и подготовит расчет!
+                    </p>
+					<div class="contentForm">
+						<form action="sender.php" method="post">
+        					<input type="text" class="name" name="name" placeholder="Имя" required>
+        					<input type="text" class="phone" name="phone" placeholder="Телефон" required>
+        					<input type="email" name="email" placeholder="Email" required>
+							<textarea name="text" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+        					<button type="button" class="send-form">Отправить форму</button>
+        					<div class="status"></div>
+    					</form>
+					</div>  
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="first-form">
+        <form action="sender.php" method="post" class="form-filling">
+            <h1>Рассчитайте стоимость по минимальной цене</h1>
+            <input type="number" class="number" name="phone" placeholder="Ваш телефон для связи с менеджером" name="phone">
+            <span class="form-label">Ваши данные в безопасности</span>
+            <button class="send-form" type="button">Отправить</button>
+            <div class="status"></div>
+        </form>
+    </section>
+    <section class="aboutUs" id="aboutUs">
+        <div class="aboutUs-inner container">
+            <div class="text-content">
+                <p>Loctite также предлагает специализированные продукты, такие как антикоррозионные покрытия, смазки, средства для блокировки резьбы и фиксации, которые помогают улучшить производительность и надежность механизмов и конструкций.</p>
+                <div class="clientNumbers">
+                    <div class="clRate">
+                        <h1>+100</h1>
+                        <p>Заказов</p>
+                    </div>
+                    <div class="clRate">
+                        <h1>+2000</h1>
+                        <p>Довольных клиентов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-content">
+                <h1>В течение года мы выполнили более ста заказов, получили более 2000 довольных клиентов и доказали свое качество в сегменте рынка, не столкнувшись с возвратом продукции.</h1>
+                <img src="images/loctite_second.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="product container" id="product">
+        <div class="product-text">
+            <h1>
+                 Мы поставляем продукцию, как для конвейерного производства, так и для технического обслуживания оборудования.
+            </h1>
+        </div>
+        <div class="prod-content">
+            <div class="product-filling">
+                <img src="images/img1.png" alt="">
+                <p>
+                    LOCTITE SI 5910 BK 300ML Силиконовый нейтральный герметик, черный аэрозольный
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img2.png" alt="">
+                <p>
+                    LOCTITE 222 50 ML Предотвращение самоотвинчивания от вибрации и герметизация резьбовых соединений.
+                </p>
+                <button class="send-form" type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img3.png" alt="">
+                <p>
+                    LOCTITE 243 50 ML Применим для всех металлов например нержавеющая сталь, алюминий, плакированные поверхности.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img4.png" alt="">
+                <p>
+                    LOCTITE 270 50 ML Имеет высокую температурную стойкость (до +180 °C) и высокую стойкость к нефтепродуктам.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img5.png" alt="">
+                <p>
+                    LOCTITE 242 50 ML Универсальный анаэробный фиксатор резьбовых соединений средней прочности.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img6.png" alt="">
+                <p>
+                    LOCTITE 542 50 ML Является однокомпонентным тиксотропным анаэробным резьбовым герметиком.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img7.png" alt="">
+                <p>
+                    LOCTITE 577 50 ML Герметик общего назначения для крупной металлической резьбы.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img8.png" alt="">
+                <p>
+                    LOCTITE 638 50 ML предназначен для склеивания цилиндрических деталей.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img9.png" alt="">
+                <p>
+                    LOCTITE 401 20 G Преимущества: Универсальный моментальный клей. Для бумаги кожи ткани.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img10.webp" alt="">
+                <p>
+                    LOCTITE 401 50 G Преимущества: Универсальный моментальный клей.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img11.webp" alt="">
+                <p>
+                    LOCTITE 406 20 G Цианоакрилатный (моментальный) с низкой вязкостью. Склеивания пластмассы и резины.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img12.jpeg" alt="">
+                <p>
+                    LOCTITE 420 20 G Этилцианакрилатный клей очень низкой вязкости. Склеивание резины, пластмасс и металлов. 
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img13.png" alt="">
+                <p>
+                    LOCTITE 435 20 G Данный продукт обеспечивает быстрое склеивание ,дерево ,бумаги ,кожи и ткани.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img14.webp" alt="">
+                <p>
+                    Loctite 480 50 G Является средневязкий, однокомпонентный цианакрилатный клей.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img15.webp" alt="">
+                <p>
+                    LOCTITE AA 326 50 ML Предназначенным для склеивания жестких элементов 
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img16.webp" alt="">
+                <p>
+                    LOCTITE FREKOTE 770 NC 5 L Высококачественная универсальная смазка для пресс-форм на основе растворителя.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img17.jpeg" alt="">
+                <p>
+                    LOCTITE 603 50 ML Является однокомпонентным анаэробным вал-втулочным фиксатором.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img18.webp" alt="">
+                <p>
+                    LOCTITE IB 8009 453 G Смазка - противозадирная, длительного действия
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img19.webp" alt="">
+                <p>
+                    LOCTITE FREKOTE PMC 3,79 L Следует наносить на поверхность формы чистой хлопчатобумажной тканью.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img20.webp" alt="">
+                <p>
+                    LOCTITE FREKOTE WOLO 3,79 L Уникальная полимерная разделительная смазка
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img21.webp" alt="">
+                <p>
+                    LOCTITE 2422 30 G Высокотемпературный анаэробный резьбовой фиксатор. Термостойкость до 350 °C.
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+            <div class="product-filling">
+                <img src="images/img22.png" alt="">
+                <p>
+                    LOCTITE 5900 300 ML Является однокомпонентным, безусадочным, некоррозирующим, слабопахнущим, силиконом
+                </p>
+                <button type="button" href="#" onclick="showFirstAdapt()">Купить</button>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="back-image container">
+            <div class="back-text">
+                <h1> Широкий ассортимент более 10 000 товаров, Loctite и Frekote.</h1>
+            </div>
+            <div class="back-contact">
+                <button onclick="showFirstAdapt()">Свяжитесь с нами</button>
+            </div>
+        </div>
+    </section>
+    <section class="secondForm container" id="secondform">
+        <div class="secondForm-text">
+            <h1>ЗАПОЛНИТЕ ПРОСТУЮ ФОРМУ</h1>
+            <p>и мы подготовим индивидуальное коммерческое предложение</p>
+        </div>
+        <form action="sender.php" method="post" class="secondForm-container" id="secondForm">
+            <input type="name" class="name" name="name" placeholder="Ваше имя">
+            <input type="email" name="email" name="email" placeholder="E-mail">
+            <input type="phone" class="phone" name="phone" placeholder="Телефон для связи">
+            <textarea name="comment" placeholder="Ваш запрос по продукции"></textarea>
+            <button class="send-form" type="button">Отправить</button>
+            <div class="status"></div>
+        </form>
+    </section>
+    <!-- <section class="picture-prev container" id="picture-prev">
+        <div class="prev-content tabs">
+            <div class="tabs__nav">
+                <div class="clients">
+                    <img src="images/map-pointer.avif" alt="">
+                    <h1>Наши Клиенты по РК</h1>
+                    <button class="tabs__nav-btn" type="button" data-tab="#tab_1">Tab 1</button>
+                </div>
+                <div class="clients">
+                    <img src="images/сертификат.png" alt="">
+                    <h1>Сертификаты качества</h1>
+                    <button class="tabs__nav-btn" type="button" data-tab="#tab_1">Tab 2</button>
+                </div>
+                <div class="clients">
+                    <img src="images/Calculator.png" alt="">
+                    <h1>Калькулятор расчета</h1>
+                    <button class="tabs__nav-btn" type="button" data-tab="#tab_1">Tab 3</button>
+                </div>
+            </div>
+        </div>
+        <div class="tabs__content">
+            <div class="tabs__item" id="tab_1">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </div>
+
+            <div class="tabs__item" id="tab_2">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+
+            <div class="tabs__item" id="tab_3">
+                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="picture-prev container" id="picture-prev" >
+        <div class="tabs">
+            <div class="tabs__nav">
+                <div class="tabs-cont">
+                    <img src="images/map-pointer.avif" alt="">
+                    <h1>Наши Клиенты по РК</h1>
+                    <button class="tabs__nav-btn" type="button" data-tab="#tab_1">...</button>
+                </div>
+                <div class="tabs-cont">
+                    <img src="images/сертификат.png" alt="">
+                    <h1>Сертификаты качества</h1>
+                    <button class="tabs__nav-btn" type="button" data-tab="#tab_2">...</button>
+                </div>
+                <div class="tabs-cont">
+                    <img src="images/Calculator.png" alt="">
+                    <h1>Калькулятор расчета</h1>
+                    <button class="tabs__nav-btn" type="button" data-tab="#tab_3">...</button>
+                </div>
+            </div>
+            <div class="tabs__content">
+                <div class="tabs__item item" id="tab_1">
+                    <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p> -->
+                    <img src="images/cl5.jpeg" alt="">
+                    <img src="images/cl6.jpeg" alt="">
+                    <img src="images/cl3.jpeg" alt="">
+                    <img src="images/cl4.jpeg" alt="">
+                    <img src="images/cl1.jpeg" alt="">
+                    <img src="images/cl2.jpeg" alt="">
+                </div>
+                <div class="tabs__item sert" id="tab_2">
+                    <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p> -->
+                    <img src="images/sert_img.jpeg" onclick="showsizeImage()" alt="">
+                </div>
+                <div class="resizeimg" id="resizeImg">
+                    <img src="images/sert_img.jpeg" alt="">
+                    <button id="resize" onclick="closeSizeImage()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="tabs__item contact-tab" id="tab_3">
+                    <p>Рассчитайте минимальную цену</p>
+                    <form action="sender.php" method="post" class="tab-form">
+                        <input class="first-form-tab name" type="name" name="name" placeholder="Ваше имя">
+                        <input class="first-form-tab phone" type="phone" name="phone" placeholder="Телефон"> 
+                    </form>
+                    <button class="send-form" type="button">Отправить сообщение</button>
+                    <div class="status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact twelfth-section" id="contact">
+        <div class="contact-inner container">
+            <div class="contact-us">
+                <h1>Свяжитесь с нами</h1>
+                <p>Если у вас есть какие-либо вопросы или вы хотите узнать стоимость продукции,обращайтесь к нам.</p>
+            </div>
+            <div class="get-in-touch">
+                <div class="phones">
+                    <ul>
+                        <li>Телефон</li>
+                        <a href="tel:+77075256969">+7 707 525 69 69</a>
+                        <br>
+                        <a href="tel:+77781111344">+7 778 111 13 44</a>
+                        <li>Email :</li>
+                        <a href="mailto:loctite.kz@gmail.com">loctite.kz@gmail.com</a>
+                        <li>Адрес</li>
+                        <a>Г.Алматы, Искендирова 29</a>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form action="sender.php" method="post" class="flex">
+                        <input class="first-form-f name" type="name" name="name" placeholder="Ваше имя">
+                        <input class="first-form-f phone" type="phone" name="phone" placeholder="Телефон"> 
+                    </form>
+                    <textarea name="text" placeholder="Сообщение"></textarea>
+                    <button class="send-form" type="button">Отправить сообщение</button>
+                    <div class="status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

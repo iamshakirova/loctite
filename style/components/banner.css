@@ -1,0 +1,65 @@
+.back-image{
+    display: flex;
+    justify-content: space-between;
+    background-image: url('/images/maxresdefault.jpeg');
+    height: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.back-text{
+    width: 50%;
+    margin-left: 50px;
+}
+.back-text h1{
+    font-size: 28px;
+    color:#fff;
+    /* color:#3b3b3b; */
+    font-weight: bold;
+}
+.back-contact{
+    width: 30%;
+}
+.back-contact button{
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #fe4c1c;
+    border: 2px solid #fe4c1c;
+    padding: 18px 45px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/* .back-contact button:hover{
+    border: 2px solid #fe4c1c;
+    color: #fe4c1c;
+    background-color: rgba(255, 0, 0, 0);
+    transition: .3s;
+} */
+
+@media(max-width:900px){
+    .back-text{
+        width: 100%;
+        /* text-align: center; */
+    }
+    .back-contact{
+        width: 100%;
+        margin-left: 50px;
+    }
+    .back-image{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:420px){
+    .back-text h1{
+        font-size: 20px;
+    }
+    .back-contact button {
+        font-size: 15px;
+        padding: 10px 40px;
+    }
+}
