@@ -20,7 +20,5 @@
 @media(max-width:400px){
     .icon-footer a{
         font-size: 25px;
-        color:black;
-        text-decoration: none;
     }
 }
