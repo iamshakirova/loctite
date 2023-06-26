@@ -27,7 +27,7 @@
     padding: 210px 0px;
     background-position: right;
     background-size:950px;
-    background-image: url('/images/homebg.png');
+    background-image: url('../../images/homebg.png');
     background-repeat:no-repeat;
 }
 .home-inner h1{
