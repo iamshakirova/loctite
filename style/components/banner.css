@@ -1,7 +1,7 @@
 .back-image{
     display: flex;
     justify-content: space-between;
-    background-image: url('/images/maxresdefault.jpeg');
+    background-image: url('../.././images/maxresdefault.jpeg');
     height: 250px;
     width: 100%;
     background-repeat: no-repeat;
@@ -54,7 +54,7 @@
         flex-wrap: wrap;
     }
 }
-@media(max-width:420px){
+/* @media(max-width:420px){
     .back-text h1{
         font-size: 20px;
     }
@@ -62,4 +62,4 @@
         font-size: 15px;
         padding: 10px 40px;
     }
-}
+} */

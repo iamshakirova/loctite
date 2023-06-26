@@ -110,6 +110,7 @@
     font-size: 20px;
     color:#3b3b3b;
     margin: 30px 0;
+    font-weight: 600;
 }
 .tab-form{
     width: 100%;
@@ -204,7 +205,7 @@
         height: 170px;
     }
     .tabs__nav {
-        margin-right: 40px;
+        margin-right: 0;
     }
     .tabs__nav-btn {
         padding: 2px 20px;

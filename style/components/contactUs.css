@@ -45,8 +45,8 @@
     padding: 20px 0;
 }
 .phones li::marker{
-    font-size: 20px;
-    color: #fe4c1c;
+    font-size: 0px;
+    /* color: #fe4c1c; */
 }
 .phones a{
     font-size: 18px;
@@ -65,6 +65,11 @@
     font-size: 18px;
     color:#3b3b3b;
     padding: 5px 0;
+}
+.phones i{
+    font-size: 25px;
+    color: #fe4c1c;
+    margin-right: 20px;
 }
 .contact-form{
     display: flex;

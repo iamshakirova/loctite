@@ -1,11 +1,32 @@
+.first-form{
+    background-image: url('../../images/white.jpeg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:right;
+    background-color:#fff;
+}
 .form-filling{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
+    text-align: center;
 }
 .form-filling h1{
+    font-size: 25px;
+    color: #3b3b3b;
+    font-weight: 600;
+    padding: 20px 0;
+}
+.form-filling h2{
+    font-size: 25px;
+    color: rgb(190, 14, 14);
+    font-weight: 600;
+    padding: 20px 0;
+    text-align: center;
+}
+.form-filling h3{
     font-size: 25px;
     color: #3b3b3b;
     font-weight: 600;
@@ -45,8 +66,24 @@
 }
 .first-form{
     width: 100%;
-    background-color: #f5f5f5;
     padding: 50px 0;
+}
+.icon-wa{
+    align-items:center;
+}
+.icon-wa i{
+    font-size: 30px;
+    color:green;
+    line-height: 1.5;
+    margin-right: 20px;
+}
+.icon-wa a{
+    font-size: 20px;
+    color:black;
+    text-decoration: none;
+}
+.icon-wa a:hover{
+    text-decoration: underline;
 }
 @media(max-width:700px){
     .form-filling h1{
@@ -89,7 +126,13 @@
 }
 @media(max-width:400px){
     .form-filling h1{
-        font-size: 15px;
+        font-size: 20px;
+    }
+    .form-filling h2{
+        font-size: 22px;
+    }
+    .form-filling h3{
+        font-size: 20px;
     }
     .form-filling input{
         width: 70%;
